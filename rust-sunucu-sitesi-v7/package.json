@@ -1,0 +1,9 @@
+{
+  "name": "rust-sunucu-sitesi",
+  "version": "3.0.0",
+  "private": true,
+  "description": "Rust sunucu sitesi + yönetim paneli + ödeme + RCON",
+  "scripts": { "start": "node server.js", "test": "node test/smoke.js" },
+  "engines": { "node": ">=18" },
+  "dependencies": { "pg": "^8.11.5" }
+}

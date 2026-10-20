@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!--META-->
+<title>Rust Sunucusu</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="ann" id="ann" hidden></div>
+<nav><div class="wrap">
+<a class="logo" href="#"><span id="logoWrap" style="display:contents"><b>R</b></span><span data-brand></span></a>
+<a class="l" href="#sunucular">Sunucu</a>
+<a class="l" href="#kitler" id="navKits">Kitler</a>
+<a class="l" href="#magaza" id="navStore">Mağaza</a>
+<a class="l" href="#kurallar">Kurallar</a>
+<a class="l" href="#haberler" id="navNews" hidden>Haberler</a>
+<a class="l" href="#sss">SSS</a>
+<a class="btn" data-discord href="#">Discord’a Katıl</a>
+<a class="adm-nav" href="#yonetim" id="adminLink" title="Yönetici girişi">🔐 Yönetim</a>
+</div></nav>
+
+<header class="hero">
+<video id="bg" autoplay muted loop playsinline preload="auto" aria-hidden="true"></video>
+<button class="snd" id="snd" type="button">🔇 Sesi aç</button>
+<div class="wrap">
+<div class="pill"><span class="dot"></span><span id="liveTxt"></span></div>
+<h1><span data-brand></span><br><em id="heroSub" style="font-style:normal"></em></h1>
+<p id="tagline"></p>
+<div class="cta"><a class="btn" href="#sunucular">Sunucuya Göz At</a><a class="btn g" href="#magaza" id="ctaStore">VIP Paketleri</a></div>
+</div>
+</header>
+
+<main class="wrap">
+<div class="stats" id="stats"></div>
+
+<section id="sunucular">
+<div class="sh"><div><h2>Sunucumuz</h2><p class="sub">Tek sunucu, tam performans. Hemen bağlan ve oynamaya başla.</p></div></div>
+<div class="card big">
+<div class="bl">
+<div class="top"><span class="reg" id="sReg"></span><span class="new" id="sStatus">● Çevrimiçi</span></div>
+<h3 id="sName"></h3>
+<div class="wipecd" id="wipeCd" hidden><span class="wl">⏳ Sonraki wipe</span><div class="wb" id="wipeBoxes"></div></div>
+<p class="sdesc" id="sDesc"></p>
+<ul class="feat" id="sFeat"></ul>
+</div>
+<div class="br">
+<div class="cnt"><b id="sOn"></b><span id="sMax"></span></div>
+<div class="small" id="sOnLbl">oyuncu çevrimiçi</div><div class="small" id="sQueue" hidden></div>
+<div class="bar"><i id="sBar"></i></div>
+<div class="chart" id="sChartWrap" hidden><div class="small">Son 24 saat oyuncu sayısı</div><svg id="sChart" viewBox="0 0 300 80" preserveAspectRatio="none"></svg><div class="small" id="sChartMeta"></div></div>
+<div class="info"><span>Grup limiti</span><b id="sGroup"></b></div>
+<div class="info"><span>Wipe</span><b id="sWipe"></b></div>
+<div class="info" id="sMapRow" hidden><span>Harita</span><b id="sMap"></b></div>
+<div class="info"><span>IP</span><b id="sIp"></b></div>
+<a class="btn lg" id="sConn" href="#">Şimdi Bağlan</a>
+<button class="btn g lg" id="sCopy" type="button">IP’yi Kopyala</button>
+</div>
+</div>
+</section>
+
+<section id="kitler">
+<div class="sh"><div><h2>Kitler</h2><p class="sub">Bir kite tıkla, içindekileri gör.</p></div></div>
+<div class="grid" id="kits"></div>
+</section>
+
+<section id="magaza">
+<div class="sh"><div><h2>Mağaza</h2><p class="sub">Sunucuyu destekle, ayrıcalıkların tadını çıkar.</p></div></div>
+<div class="vip" id="vip"></div>
+</section>
+
+<section id="kurallar">
+<div class="sh"><div><h2>Kurallar</h2><p class="sub">Herkes için adil bir ortam.</p></div></div>
+<div class="rules" id="rules"></div>
+</section>
+
+<section id="haberler" hidden>
+<div class="sh"><div><h2>Haberler</h2><p class="sub">Güncellemeler ve duyurular.</p></div></div>
+<div class="news" id="news"></div>
+</section>
+
+<section id="sss">
+<div class="sh"><div><h2>Sık Sorulan Sorular</h2></div></div>
+<div id="faq"></div>
+</section>
+
+<div class="final"><h2>Oyuna hazır mısın?</h2><p class="sub" style="margin-bottom:8px">Topluluğa katıl, wipe duyurularını kaçırma.</p><p class="sub" id="dcStats" style="margin-bottom:18px" hidden></p><a class="btn" data-discord href="#">Discord’a Katıl</a></div>
+</main>
+
+<footer><div class="wrap small"><div class="socials" id="socials"></div>© <span data-brand></span>. Tüm hakları saklıdır.<br><span id="footNote"></span></div></footer>
+<div class="toast" id="toast">IP kopyalandı</div>
+
+<script src="default-site.js"></script>
+<script src="icons.js"></script>
+<script src="script.js"></script>
+<script src="checkout.js"></script>
+</body>
+</html>
